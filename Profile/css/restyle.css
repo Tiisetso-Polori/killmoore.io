@@ -1,0 +1,365 @@
+root{
+    --text0:#222;
+    --text1:#CCC;
+    --back0:#777;
+    --back1:#444;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    height:8rem;
+    width:100vw;
+    top:0;
+    margin-left: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-evenly;
+    background-color : #DDD;
+    position:relative;
+    z-index: 1000;
+}
+
+header img{
+    height:100%;
+}
+
+section h1{
+    text-align: center;
+}
+
+#nav-list-nav{
+    list-style: none;
+    display:flex;
+    margin: 2.5rem auto;
+}
+
+#nav-item{
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+#nav-item a{
+    text-decoration: none;
+    color: var(--text0);
+}
+
+main{
+    position:relative;
+    width:50rem;
+    margin: 2rem auto;
+}
+
+#projects{
+    height:40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin:0.2rem auto;
+
+}
+
+#projects-container{
+    height:18rem;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+#projects-container::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+
+#projects-container::-webkit-scrollbar-thumb{
+    background:#201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+#projects-container::-webkit-scrollbar-track{
+    background:linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0, #17141d);
+}
+
+#nav-box{
+    width:10rem;
+    height:10rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #777 solid 0.1rem;
+    box-shadow: -1rem 0 2rem #444;
+    padding: 2em;
+    margin:1.5rem;
+}
+
+#nav-box:hover{
+    transform:translateY(-1rem);
+    transition: 1s;
+}
+
+#nav-box img{
+    width:100%;
+}
+
+#nav-box a{
+    color:var(--text1);
+    text-decoration: none;
+    margin:0.7rem auto;
+}
+
+#nav-box-link{
+    text-align: center;
+}
+
+#gallery{
+    width:100%;
+    height: 40rem;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+#gal-nav{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#gal-nav a{
+    color:var(--text1);
+    text-decoration: none;
+    margin:0.7rem auto;
+}
+
+#gal-nav-item{
+    width:20rem;
+    height:20rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #777 solid 0.1rem;
+    box-shadow: -1rem 0 2rem #444;
+    padding: 2em;
+    margin:1.5rem;
+}
+
+#gal-nav-item:hover{
+    transform:translateY(-1rem);
+    transition: 1s;
+}
+
+#gal-nav-item img{
+    width:100%;
+}
+
+#gal-nav-item a{
+    color:var(--text1);
+    text-decoration: none;
+    margin:0.7rem auto;
+}
+
+#nav-item-link{
+    text-align: center;
+}
+
+#interests-cont{
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+
+#interests-cont::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+
+#interests-cont::-webkit-scrollbar-thumb{
+    background:#201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+#interests-cont::-webkit-scrollbar-track{
+    background:linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0, #17141d);
+}
+
+#interest{
+    border:1px solid grey;
+    background-color: grey;
+    object-fit: cover;
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    min-width: 200px;
+    padding:2.5rem;
+    border-radius: 12px;
+    background:#FFF;
+    box-shadow: -1rem 0 3rem #777;
+    overflow: hidden;
+    transition:1s;
+}
+
+#interest:hover{
+    transform:translateY(-1rem);
+}
+
+#interest:hover~#interest{
+    transform:translateX(80px);
+}
+
+#interest:not(:first-child){
+    margin-left:-80px;
+}
+
+#interest img{
+    width: 100%;
+    height:auto;
+    display: block;
+}
+
+#interest h3{
+    position:relative;
+    display:grid;
+    grid-template-columns: 200px 2fr;
+    align-items: center;
+    margin:3rem 0 0;
+}
+
+footer{
+    height:8rem;
+    width:100vw;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    background-color : #555;
+    color: #FFF;
+}
+
+/* Handling smaller screens*/
+
+@media screen and (max-width:600px) {
+    header{
+        height:100vh;
+        width:5rem;
+        top:0;
+        margin-left: 0;
+        padding: 0;
+        display:flex;
+        flex-direction: column;
+        background-color : #CCC;
+        position:fixed;
+        z-index: 1000;
+    }
+
+    header img{
+        width:100%;
+    }
+
+    header h1{
+        font-size: 1rem;
+    }
+    
+    #nav-list-nav{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        margin: .5rem auto;
+    }
+    
+    #nav-item{
+        display: none;
+    }
+
+    main{
+        top:0;
+        left:5rem;
+        position:relative;
+        width:400px;
+        margin:0 0 0 5px;
+    }
+    
+}
+
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: #ab2174;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #bd1f0e;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #5aabc8;
+    color: white;
+  }
+
+  .fa-whatsapp {
+    background: #0b9226;
+    color: white;
+  }
+
+  .instagram-account {
+    margin-bottom: 20px;
+    /* Add more styling as needed */
+}
+
+.pinterest-account {
+    margin-bottom: 20px;
+    /* Add more styling as needed */
+}
+
+.instagram-embed {
+    font-size: 24px;
+    color: #e4405f; /* Instagram color */
+    /* Add more styling as needed */
+}
+
+.pinterest-embed {
+    font-size: 24px;
+    color: #bd081c; /* Pinterest color */
+    /* Add more styling as needed */
+}

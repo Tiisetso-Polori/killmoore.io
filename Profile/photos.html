@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/restyle.css">-->
+    <script src="./js/galleryRunner.js"></script>
+    <title>Gallery | Photos Viewer</title>
+</head>
+<body >
+   
+    <header>
+        <h1>My Shoots</h1>
+    </header>
+    <main id="gallery">
+        <!-- SECTION FOR SCROLLABLE PHOTO VIEW...-->
+        <section id="gal-nav">
+            <div id="ejozi" onclick="viewImages('eJozi')" ondblclick="clearImages()">
+                <img src="../Profile/react-gallery/src/resrc/ejozi.jpg" alt="">
+                <h3>eJozi</h3>
+            </div>
+            <div id="bhosso" onclick="viewImages('Bhosso')" ondblclick="clearImages()">
+                <img src="../Profile/react-gallery/src/resrc/bhosso.jpg" alt="">
+                <h3>Bhosso</h3>
+            </div>
+            <div id="brown" onclick="viewImages('Brown')" ondblclick="clearImages()">
+                <img src="../Profile/react-gallery/src/resrc/brown.jpg" alt="">
+                <h3>Brown</h3>
+            </div>
+            <div id="melanin" onclick="viewImages('Melanin')" ondblclick="clearImages()">
+                <img src="../Profile/react-gallery/src/resrc/melanin.jpg" alt="">
+                <h3>Melanin</h3>
+            </div>
+            <div id="primrose" onclick="viewImages('Primrose')" ondblclick="clearImages()">
+                <img src="../Profile/react-gallery/src/resrc/primrose.jpg" alt="">
+                <h3>Primrose</h3>
+            </div>
+            <div id="blooming" onclick="viewImages('Blooming')" ondblclick="clearImages()">
+                <img src="../Profile/react-gallery/src/resrc/blooming.jpg" alt="">
+                <h3>Blooming</h3>
+            </div>
+        </section>
+    </main>
+    <section id="pictures" onclick="clearImages()" style="visibility: hidden;"></section>
+    
+</body>
+</html>
