@@ -63,10 +63,13 @@
             </div>
 
 -->        
-        <section id="gal-nav">
-            <div id = "yes">
-                <button value="Yes" onclick="GalleryRunner.addGalleryObjectsToParent()"></button>
-            </div>
+        <section id="gal-nav" onload="GalleryRunner.addGalleryObjectsToParent()">
+            <script>
+                // Attach event listener to run the function when the page loads
+                window.addEventListener('load', function() {
+                    GalleryRunner.addGalleryObjectsToParent();
+                });
+            </script>
             </section>
     </main>
     <section id="pictures" ondblclick="GalleryRunner.clearImages()" style="visibility: hidden;"></section>

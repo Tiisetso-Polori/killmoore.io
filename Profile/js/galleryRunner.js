@@ -36,13 +36,13 @@ var GalleryRunner = {
             dir: '../Profile/react-gallery/src/resrc/primrose/',
             photos:['0.jpg','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','13.jpg','14.jpg','15.jpg']
         },
-       /* {
+         {
             id:6,
             header:'eGumbini',
             //cover:egumbini,
             dir: '../Profile/react-gallery/src/resrc/egumbini/',
             photos:['0.jpg','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','13.jpg','14.jpg','15.jpg']
-        },*/
+        },
         {
             id:7,
             header:'Melanin',
@@ -94,6 +94,14 @@ var GalleryRunner = {
             //cover:shoot3,
             dir: '../Profile/react-gallery/src/resrc/shoot 3/',
             photos:['0.jpg','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg']
+        },
+        ,
+        {
+            id:15,
+            header:'Nippy',
+            //cover:nippy,
+            dir: '../Profile/react-gallery/src/resrc/nippy/',
+            photos:['0.jpg','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg','19.jpg','20.jpg','21.jpg','22.jpg','23.jpg','24.jpg']
         }
     ],
     
@@ -162,8 +170,8 @@ var GalleryRunner = {
                 //box.innerHTML+=galleryHTML;
             });
 
-            var item = document.getElementById("yes");
-            item.style.visibility="none";
+           /* var item = document.getElementById("yes");
+            item.style.visibility="none";*/
         }
 
 
