@@ -137,23 +137,33 @@ var GalleryRunner = {
     
     generateGalleryHTML(galleryObj) {
            // var srcc = ;
-            return `
+           var box = document.getElementById("gal-nav")
+           
+           box.innerHTML+=`
                 <div id="${galleryObj.header}" onclick="GalleryRunner.viewImages('${galleryObj.header}')" ondblclick="GalleryRunner.clearImages()">
-                    <img src="../Profile/react-gallery/src/resrc/${String.toString(galleryObj.header).toLowerCase}.jpg" alt="${galleryObj.header}">
+                    <img src="../Profile/react-gallery/src/resrc/${galleryObj.header.toLowerCase()}.jpg" alt="${galleryObj.header}">
                     <h3>${galleryObj.header}</h3>
                 </div>
             `;
         },
     
     addGalleryObjectsToParent() {
-            const scriptTag = document.currentScript;
-            const parentElement = scriptTag.parentElement;
-            if (!parentElement) return;
+            //const scriptTag = document.currentScript;
+            //const parentElement = scriptTag.parentElement;
+            //var box = document.getElementById("pictures")
+            //box.innerHTML = ''
+            //if (!parentElement) return;
         
-            collections.forEach(galleryObj => {
-                const galleryHTML = generateGalleryHTML(galleryObj);
-                parentElement.insertAdjacentHTML('beforeend', galleryHTML);
+            GalleryRunner.collections.forEach(galleryObj => {
+                //const galleryHTML = 
+                GalleryRunner.generateGalleryHTML(galleryObj);
+                
+                //parentElement.insertAdjacentHTML('beforeend', galleryHTML);
+                //box.innerHTML+=galleryHTML;
             });
+
+            var item = document.getElementById("yes");
+            item.style.visibility="none";
         }
 
 
