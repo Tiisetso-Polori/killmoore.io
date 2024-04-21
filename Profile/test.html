@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="web.css">
     <!--<link rel="stylesheet" href="css/restyle.css">-->
     <script src="./js/galleryRunner.js"></script>
+    <script src="./js/storeRunner.js"></script>
     <title>Testing Page</title>
 </head>
 <body>
@@ -63,13 +64,14 @@
             </div>
 
 -->        
-        <section id="gal-nav" onload="GalleryRunner.addGalleryObjectsToParent()">
+        <section id="product-list">
             <script>
                 // Attach event listener to run the function when the page loads
                 window.addEventListener('load', function() {
-                    GalleryRunner.addGalleryObjectsToParent();
+                    StoreRunner.addStoreObjectsToParent();
                 });
             </script>
+
             </section>
     </main>
     <section id="pictures" ondblclick="GalleryRunner.clearImages()" style="visibility: hidden;"></section>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="web.css">
+    <script src="./js/storeRunner.js"></script>
     <title>TyHil Store</title>
 </head>
 <body>
@@ -21,12 +22,19 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        <section class="container">
             <h1>Our Products</h1>
-            <div class="products" id="product-list">
+            <section class="products" id="product-list">
                 <!-- Products will be dynamically added here -->
-            </div>
-        </div>
+                <script>
+                    // Attach event listener to run the function when the page loads
+                    window.addEventListener('load', function() {
+                        StoreRunner.addStoreObjectsToParent();
+                    });
+                </script>
+    
+            </section>
+        </section>
     </main>
     <footer>
         <nav id="nav-list">
