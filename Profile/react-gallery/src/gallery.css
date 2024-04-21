@@ -47,9 +47,9 @@
         overflow-x: scroll;
     }
     #collection{
-        width: 250px;
-    height: 300px;
-    min-width: 250px;
+    width: 150px;
+    height: 200px;
+    min-width: 150px;
     padding:2.5rem;
     }
     #collection:hover{
