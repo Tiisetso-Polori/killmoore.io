@@ -1,3 +1,4 @@
+
 var StoreRunner = {
 
     collections : [
@@ -81,5 +82,11 @@ var StoreRunner = {
 
         /* var item = document.getElementById("yes");
          item.style.visibility="none";*/
+     },
+
+     getFiles(dir) {
+        var fs = require('fs')
+        var files = fs.readdirSync('../Profile/react-gallery/src/resrc/serene/')
+        console.log(files);
      }
 }
