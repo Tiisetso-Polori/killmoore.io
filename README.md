@@ -4,7 +4,7 @@ A brief description of what your project does and who it's for.
 
 ## Table of Contents
 
-- [About](#about)
+- [About](index.html)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
