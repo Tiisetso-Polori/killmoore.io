@@ -3,79 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="web.css">
-    <link rel="icon" href="Profile/resrc c/killmoore.jpg" type="image/x-icon">
-    <!--<link rel="stylesheet" href="css/restyle.css">-->
-    <script src="./js/galleryRunner.js"></script>
-
-    <title>Testing Page</title>
+    <title>Home Page with Hover Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+            position: relative;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            background-color: #444;
+            min-width: 160px;
+            z-index: 1;
+        }
+        nav ul li ul li {
+            float: none;
+        }
+        nav ul li ul li a {
+            padding: 12px 16px;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-
-    <main id="gallery">
-        <section id="gal-nav">
-            <div id="ejozi" onclick="GalleryRunner.viewImages('eJozi')">
-                <img src="../Profile/react-gallery/src/resrc/ejozi.jpg" alt="">
-                <h3>eJozi</h3>
-            </div>
-            <div id="bhosso" onclick="GalleryRunner.viewImages('Bhosso')">
-                <img src="../Profile/react-gallery/src/resrc/bhosso.jpg" alt="">
-                <h3>Bhosso</h3>
-            </div>
-            <div id="brown" onclick="GalleryRunner.viewImages('Brown')">
-                <img src="../Profile/react-gallery/src/resrc/brown.jpg" alt="">
-                <h3>Brown</h3>
-            </div>
-            <div id="melanin" onclick="GalleryRunner.viewImages('Melanin')">
-                <img src="../Profile/react-gallery/src/resrc/melanin.jpg" alt="">
-                <h3>Melanin</h3>
-            </div>
-            <div id="primrose" onclick="GalleryRunner.viewImages('Primrose')">
-                <img src="../Profile/react-gallery/src/resrc/primrose.jpg" alt="">
-                <h3>Primrose</h3>
-            </div>
-            <div id="blooming" onclick="GalleryRunner.viewImages('Blooming')">
-                <img src="../Profile/react-gallery/src/resrc/blooming.jpg" alt="">
-                <h3>Blooming</h3>
-            </div>
-            <div id="goldie" onclick="GalleryRunner.viewImages('Goldie')">
-                <img src="../Profile/react-gallery/src/resrc/goldie.jpg" alt="">
-                <h3>Goldie</h3>
-            </div>
-            <div id="serene" onclick="GalleryRunner.viewImages('Serene')">
-                <img src="../Profile/react-gallery/src/resrc/serene.jpg" alt="">
-                <h3>Serene</h3>
-            </div>
-            <div id="afrobeaut" onclick="GalleryRunner.viewImages('Afrobeaut')">
-                <img src="../Profile/react-gallery/src/resrc/afrobeaut.jpg" alt="">
-                <h3>Afrobeaut</h3>
-            </div>
-            <div id="dangerous" onclick="GalleryRunner.viewImages('Dangerous')">
-                <img src="../Profile/react-gallery/src/resrc/dangerous.jpg" alt="">
-                <h3>Dangerous</h3>
-            </div>
-            <div id="anti" onclick="GalleryRunner.viewImages('Anti')">
-                <img src="../Profile/react-gallery/src/resrc/anti.jpg" alt="">
-                <h3>Anti</h3>
-            </div>
-            <div id="shoot 3" onclick="GalleryRunner.viewImages('Shoot3')">
-                <img src="../Profile/react-gallery/src/resrc/shoot 3.jpg" alt="">
-                <h3>Shoot 3</h3>
-            </div>
-<<<<<<< Updated upstream
-=======
-
--->        
-        <section id="product-list">
-            <script>
-                // Attach event listener to run the function when the page loads
-                
-            </script>
-
->>>>>>> Stashed changes
-            </section>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="test.html">Home</a></li>
+            <li>
+                <a href="#about">About</a>
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our Story</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Home Page Content</h2>
+        <p>This is the home page of my website. You can find various information and services here.</p>
     </main>
-    <section id="pictures" ondblclick="GalleryRunner.clearImages()" style="visibility: hidden;"></section>
+    <footer>
+        <p>Footer Content &copy; 2024</p>
+    </footer>
 </body>
 </html>
