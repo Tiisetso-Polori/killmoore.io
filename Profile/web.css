@@ -127,45 +127,48 @@ main{
     
 }
 
-#gal-nav{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#gal-nav a{
-    color:var(--text1);
-    text-decoration: none;
-    margin:0.7rem auto;
-}
-
-#gal-nav-item{
-    width:20rem;
-    height:20rem;
+/* General container styling */
+#gal-nav-item {
+    position: relative; /* Make the container position relative */
+    width: 5rem; /* Adjust the width */
+    height: 5rem; /* Adjust the height */
     font-size: 1.5rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: #777 solid 0.1rem;
     box-shadow: -1rem 0 2rem #444;
-    padding: 2em;
-    margin:1.5rem;
+    padding: 0; /* Remove padding */
+    margin: 1.5rem;
+    background-size: cover; /* Ensure the background covers the whole container */
+    background-position: center;
+    overflow: hidden; /* Ensure no overflow */
 }
 
-#gal-nav-item:hover{
-    transform:translateY(-1rem);
+#gal-nav-item:hover {
+    transform: translateY(-1rem);
     transition: 1s;
 }
 
-#gal-nav-item img{
-    width:100%;
+/* Image container */
+#gal-nav-item img {
+    display: none; /* Hide the img tag since we are using background image */
 }
 
-#gal-nav-item a{
-    color:var(--text1);
+/* Title text styling */
+#gal-nav-item a {
+    position: absolute; /* Position absolute to place in bottom right */
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--text1);
     text-decoration: none;
-    margin:0.7rem auto;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Adjust font size if necessary */
+    margin: 0; /* Remove margin */
 }
+
 
 #nav-item-link{
     text-align: center;

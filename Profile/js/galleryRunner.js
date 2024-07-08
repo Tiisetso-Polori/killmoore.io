@@ -140,14 +140,13 @@ var GalleryRunner = {
             return `
                 <div id="${galleryObj.header}" onclick="GalleryRunner.viewImages('${galleryObj.header}')" ondblclick="GalleryRunner.clearImages()">
                     <img src="../Profile/react-gallery/src/resrc/${String.toString(galleryObj.header).toLowerCase}.jpg" alt="${galleryObj.header}">
-                    <h3>${galleryObj.header}</h3>
+                    <h1>${galleryObj.header}</h1>
                 </div>
             `;
         },
     
     addGalleryObjectsToParent() {
-            const scriptTag = document.currentScript;
-            const parentElement = scriptTag.parentElement;
+            const parentElement = document.getElementById('gal-nav');            
             if (!parentElement) return;
         
             collections.forEach(galleryObj => {

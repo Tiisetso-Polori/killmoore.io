@@ -58,7 +58,11 @@
             display: block;
         }
         main {
-            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px; 
         }
         footer {
             background-color: #333;
@@ -68,7 +72,55 @@
             position: fixed;
             width: 100%;
             bottom: 0;
-        }
+        }/* General container styling */
+
+#gal-nav-item {
+    position: relative; /* Make the container position relative */
+    width: 15rem; /* Adjust the width */
+    height: 15rem; /* Adjust the height */
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    border: #777 solid 0.1rem;
+    box-shadow: -1rem 0 2rem #444;
+    padding: 0; /* Remove padding */
+    margin: 1.5rem;
+    background-size: cover; /* Ensure the background covers the whole container */
+    background-position: center;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+#gal-nav-item:hover {
+    transform: translateY(-1rem);
+    transition: 1s;
+}
+
+#gal-nav-item img{
+    display: none;
+}
+
+#gal-nav-item h3{
+    color: aliceblue;
+    top: 1rem;
+    left: 1rem;
+}
+
+/* Title text styling */
+#gal-nav-item a {
+    position: absolute; /* Position absolute to place in bottom right */
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--text1);
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem; /* Adjust font size if necessary */
+    margin: 0; /* Remove margin */
+}
+
     </style>
 </head>
 <body>
@@ -97,8 +149,10 @@
         </ul>
     </nav>
     <main>
-        <h2>Home Page Content</h2>
-        <p>This is the home page of my website. You can find various information and services here.</p>
+        <div id="gal-nav-item" onclick="GalleryRunner.viewImages('eJozi')" style="background-image: url('../Profile/resrc copy/ejozi/0.jpg');">
+            <img src="../Profile/react-gallery/src/resrc/ejozi.jpg" alt="">
+            <h3>eJozi</h3>
+        </div>
     </main>
     <footer>
         <p>Footer Content &copy; 2024</p>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="web.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="web.css">
     <link rel="icon" href="Profile/resrc c/killmoore.jpg" type="image/x-icon">
     <!--<link rel="stylesheet" href="css/restyle.css">-->
     <script src="./js/galleryRunner.js"></script>
@@ -26,9 +26,76 @@
             </ul>
         </nav>
     </header>
+    
+    <script>
+
+        window.addEventListener('load', function() {
+            GalleryRunner.addGalleryObjectsToParent();
+        });            
+    </script>
+
     <main id="gallery">
         <!-- SECTION FOR SCROLLABLE PHOTO VIEW...-->
         <section id="gal-nav">
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('eJozi')" style="background-image: url('../Profile/react-gallery/src/resrc/ejozi/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/ejozi.jpg" alt="">
+                <h3>eJozi</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Bhosso')" style="background-image: url('../Profile/react-gallery/src/resrc/bhosso/1.jpg');" >
+                <img src="../Profile/react-gallery/src/resrc/bhosso.jpg" alt="">
+                <h3>Bhosso</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Brown')" style="background-image: url('../Profile/react-gallery/src/resrc/brown/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/brown.jpg" alt="">
+                <h3>Brown</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Melanin')" style="background-image: url('../Profile/react-gallery/src/resrc/melanin/3.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/melanin.jpg" alt="">
+                <h3>Melanin</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Primrose')" style="background-image: url('../Profile/react-gallery/src/resrc/primrose/6.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/primrose.jpg" alt="">
+                <h3>Primrose</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Blooming')" style="background-image: url('../Profile/react-gallery/src/resrc/blooming/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/blooming.jpg" alt="">
+                <h3>Blooming</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Goldie')" style="background-image: url('../Profile/react-gallery/src/resrc/goldie/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/goldie.jpg" alt="">
+                <h3>Goldie</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Serene')" style="background-image: url('../Profile/react-gallery/src/resrc/serene/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/serene.jpg" alt="">
+                <h3>Serene</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Afrobeaut')" style="background-image: url('../Profile/react-gallery/src/resrc/afrobeaut/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/afrobeaut.jpg" alt="">
+                <h3>Afrobeaut</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Dangerous')" style="background-image: url('../Profile/react-gallery/src/resrc/dangerous/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/dangerous.jpg" alt="">
+                <h3>Dangerous</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Anti')" style="background-image: url('../Profile/react-gallery/src/resrc/anti/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/anti.jpg" alt="">
+                <h3>Anti</h3>
+            </div>
+            <div id="gal-nav-item" onclick="GalleryRunner.viewImages('Shoot3')" style="background-image: url('../Profile/react-gallery/src/resrc/shoot3/0.jpg');">
+                <img src="../Profile/react-gallery/src/resrc/shoot 3.jpg" alt="">
+                <h3>Shoot 3</h3>
+            </div>
+        </section>
+    </main>
+    <section id="pictures" ondblclick="GalleryRunner.clearImages()" style="visibility: hidden;"></section>
+
+</body>
+</html>
+
+
+
+
+        <!-- 
             <div id="ejozi" onclick="GalleryRunner.viewImages('eJozi')">
                 <img src="../Profile/react-gallery/src/resrc/ejozi.jpg" alt="">
                 <h3>eJozi</h3>
@@ -76,10 +143,4 @@
             <div id="shoot 3" onclick="GalleryRunner.viewImages('Shoot3')">
                 <img src="../Profile/react-gallery/src/resrc/shoot 3.jpg" alt="">
                 <h3>Shoot 3</h3>
-            </div>
-        </section>
-    </main>
-    <section id="pictures" ondblclick="GalleryRunner.clearImages()" style="visibility: hidden;"></section>
-    
-</body>
-</html>
+            </div>-->
