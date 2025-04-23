@@ -49,7 +49,7 @@ section h1{
 
 main{
     position:relative;
-    width:50rem;
+    width:70rem;
     margin: 2rem auto;
 }
 
@@ -59,65 +59,154 @@ main{
     display: flex;
     flex-direction: column;
     margin:0.2rem auto;
-
+    position: relative;
 }
 
-#projects-container{
-    height:18rem;
-    width:100%;
-    display:flex;
+#interests, #gallery, #bookings {
+    position: relative;
+    margin: 100px auto;
+}
+
+.projects-container{
+    position: relative;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-y: scroll;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding: 50px 0px;
+    background: rgba(0, 136, 232, 1);
+    background: -moz-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      right bottom,
+      color-stop(0%, rgba(0, 136, 232, 1)),
+      color-stop(0%, rgba(0, 182, 198, 1)),
+      color-stop(100%, rgba(0, 136, 232, 1))
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: -o-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      -45deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    background: linear-gradient(
+      135deg,
+      rgba(0, 136, 232, 1) 0%,
+      rgba(0, 182, 198, 1) 0%,
+      rgba(0, 136, 232, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
 }
 
-#projects-container::-webkit-scrollbar{
+.projects-container::-webkit-scrollbar{
     width:10px;
     height:10px;
 }
 
-#projects-container::-webkit-scrollbar-thumb{
+.projects-container::-webkit-scrollbar-thumb{
     background:#201c29;
     border-radius: 10px;
     box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
 }
 
-#projects-container::-webkit-scrollbar-track{
+.projects-container::-webkit-scrollbar-track{
     background:linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0, #17141d);
 }
 
-#nav-box{
-    width:10rem;
-    height:10rem;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: #777 solid 0.1rem;
-    box-shadow: -1rem 0 2rem #444;
-    padding: 2em;
-    margin:1.5rem;
-}
-
-#nav-box:hover{
-    transform:translateY(-1rem);
-    transition: 1s;
-}
-
-#nav-box img{
-    width:100%;
-}
-
-#nav-box a{
-    color:var(--text1);
-    text-decoration: none;
-    margin:0.7rem auto;
-}
-
-#nav-box-link{
+.project-item{
+    cursor: pointer;
+    display: block;
+    background: #ffffff;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
     text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
 }
+
+@media screen and (max-width: 480px) {
+    .project-item {
+      margin: 0px 30px !important;
+    }
+  }
+
+  .project-item:hover .icon,
+.project-item:hover a.main-button {
+  background-color: #0088e8;
+}
+
+.project-item .icon {
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 30px;
+  background: #00b4c6;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+
+.project-item .icon img {
+  max-width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-item .project-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.7px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.project-item p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.project-item a.main-button {
+  margin-top: 30px;
+  display: inline-block;
+}
+  
 
 #gallery{
     width:100%;
@@ -127,11 +216,17 @@ main{
     
 }
 
+#gal-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 /* General container styling */
 #gal-nav-item {
     position: relative; /* Make the container position relative */
-    width: 5rem; /* Adjust the width */
-    height: 5rem; /* Adjust the height */
+    width: 20rem; /* Adjust the width */
+    height: 20rem; /* Adjust the height */
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -148,11 +243,6 @@ main{
 #gal-nav-item:hover {
     transform: translateY(-1rem);
     transition: 1s;
-}
-
-/* Image container */
-#gal-nav-item img {
-    display: none; /* Hide the img tag since we are using background image */
 }
 
 /* Title text styling */
