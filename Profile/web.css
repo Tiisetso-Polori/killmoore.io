@@ -136,6 +136,7 @@ main{
     background: #ffffff;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
     padding: 40px 30px;
+    margin: 0px 30px;
     text-align: center;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -144,7 +145,7 @@ main{
     position: relative;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
     .project-item {
       margin: 0px 30px !important;
     }
