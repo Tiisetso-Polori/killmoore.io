@@ -48,22 +48,86 @@
             min-width: 160px;
             z-index: 1;
         }
+        
+        nav ul li:hover ul {
+            display: block;
+        }
         nav ul li ul li {
             float: none;
         }
         nav ul li ul li a {
             padding: 12px 16px;
         }
-        nav ul li:hover ul {
-            display: block;
-        }
         main {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
-            padding: 20px; 
+            gap: 10px;
+            padding: 10px; 
+            margin: 10px auto;
         }
+
+        #content{
+            width:100%;
+            height:760px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #left, #middle, #right{
+            margin: 10px auto;
+        }
+
+        #left, #middle, #right{
+            height:740px;
+        }
+
+        #wide{
+            width: 100%;
+            background-color: #555;
+            height:250px;
+        }
+
+
+        #content #left{
+            width: 320px;
+            left:0px;
+            background-color:#00a1;
+        }
+
+        #content #middle{
+            width: 940px;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: #444;
+            padding: 5px;
+        }
+
+        #middle #project-item{
+            width: 440px;
+            height: 150px;
+            border: 1px solid #fff;
+            background-color: #888;
+            border-radius:5px;
+            padding:5px;
+        }
+
+        #middle #project-item:hover{
+            transition: 0.5s;
+            transform: translateY(5px);
+            
+        }
+
+        #content #right{
+            width: 200px;
+            right:0px;
+            background-color: #999;
+            overflow-y: scroll;
+
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -74,10 +138,10 @@
             bottom: 0;
         }/* General container styling */
 
-#gal-nav-item {
-    position: relative; /* Make the container position relative */
-    width: 15rem; /* Adjust the width */
-    height: 15rem; /* Adjust the height */
+#photo-item {
+    
+    width: 150px; /* Adjust the width */
+    height: 150px; /* Adjust the height */
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -92,23 +156,23 @@
     overflow: hidden; /* Ensure no overflow */
 }
 
-#gal-nav-item:hover {
+#photo-item:hover {
     transform: translateY(-1rem);
     transition: 1s;
 }
 
-#gal-nav-item img{
+#photo-item img{
     display: none;
 }
 
-#gal-nav-item h3{
+#photo-item h3{
     color: aliceblue;
     top: 1rem;
     left: 1rem;
 }
 
 /* Title text styling */
-#gal-nav-item a {
+#photo-item a {
     position: absolute; /* Position absolute to place in bottom right */
     bottom: 1rem;
     right: 1rem;
@@ -122,37 +186,229 @@
 }
 
     </style>
+    
 </head>
 <body>
     <header>
         <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="test.html">Home</a></li>
+                <li>
+                    <a href="#about">About</a>
+                    <ul>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Our Story</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="test.html">Home</a></li>
-            <li>
-                <a href="#about">About</a>
-                <ul>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Our Story</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Services</a>
-                <ul>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">Marketing</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
     <main>
-        <div id="gal-nav-item" onclick="GalleryRunner.viewImages('eJozi')" style="background-image: url('../Profile/resrc copy/ejozi/0.jpg');">
-            <img src="../Profile/react-gallery/src/resrc/ejozi.jpg" alt="">
-            <h3>eJozi</h3>
-        </div>
+        <section id="wide">
+            
+        </section>
+        <section id="content">
+            <section id="left">
+                <h1>My Skills</h1>
+                <ul id="skills">
+                    <li id="skill-item">
+                        Soft Skills
+                        <ul id="sub-skills">
+                            <li id="skill-item">
+                                Attention To Detail
+                            </li>
+                            <li>
+                                Solution Orientation
+                            </li>
+                            <li>
+                                Time Management
+                            </li>
+                            <li>
+                                Collaboration & Teamwork
+                            </li>
+                            <li>
+                                Communication
+                            </li>
+                            <li>
+                                Emotional Intelligence
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="skill-item">
+                        Technical Skills
+                        <ul id="sub-skills">
+                            <li id="skill-item">
+                                Programming Languages
+                                <ul id="sub-sub-skills">
+                                    <li id="skill-item">
+                                        JavaScript / TypeScript
+                                    </li>
+                                    <li id="skill-item">
+                                        Java
+                                    </li>
+                                    <li id="skill-item">
+                                        C++
+                                    </li>
+                                    <li id="skill-item">
+                                        Python
+                                    </li>
+                                    <li id="skill-item">
+                                        C#
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li id="skill-item">
+                                Database
+                                <ul id="sub-sub-skills">
+                                    <li id="skill-item">
+                                        SQL Server Management System
+                                    </li>
+                                    <li id="skill-item">
+                                        MySQL Workbench
+                                    </li>
+                                    <li id="skill-item">
+                                        PostgreSQL PgAdmin 4
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="skill-item">
+                                Full Stack Development
+                                <ul id="sub-sub-skills">
+                                    <li id="skill-item">
+                                        HTML, CSS & JavaScript
+                                    </li>
+                                    <li id="skill-item">
+                                        TypeScript
+                                    </li> 
+                                    <li id="skill-item">
+                                        Node & Express
+                                    </li>
+                                   <li id="skill-item">
+                                        React, Angular, Vite
+                                   </li> 
+                                   <li id="skill-item">
+                                    RESTful API
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li id="skill-item">
+                                Version Control
+                                <ul id="sub-sub-skills">
+                                    <li id="skill-item">
+                                        Dev-Ops
+                                    </li>
+                                    <li id="skill-item">
+                                        Git / GitHub
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="skill-item">
+                                Microsoft Suite
+                                <ul id="sub-sub-skills">
+                                    <li id="skill-item">
+                                        Microsoft Excel
+                                    </li>
+                                    <li id="skill-item">
+                                        Microsoft Word
+                                    </li> 
+                                    <li id="skill-item">
+                                        Microsoft Access
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="middle">
+                <p id="project-item">
+                    Learner Management System
+                </p>
+                <p id="project-item">
+                    Discretionary Grant Evaluation Platform
+                </p>
+                <p id="project-item">
+                    Cafe Management System
+                </p>
+                <p id="project-item">
+                    Photoshoot Planning System
+                </p>
+                <p id="project-item">
+                    Learner Management System
+                </p>
+                <p id="project-item">
+                    Discretionary Grant Evaluation Platform
+                </p>
+                <p id="project-item">
+                    Cafe Management System
+                </p>
+                <p id="project-item">
+                    Photoshoot Planning System
+                </p>
+            </section>
+            <section id="right">
+                <h2>My Photography</h2>
+        <section id="wide">
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('eJozi')" style="background-image: url('../Profile/react-gallery/src/resrc/ejozi/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/ejozi.jpg" alt="">
+                    <h3>eJozi</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Bhosso')" style="background-image: url('../Profile/react-gallery/src/resrc/bhosso/1.jpg');" >
+                    <img src="../Profile/react-gallery/src/resrc/bhosso.jpg" alt="">
+                    <h3>Bhosso</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Brown')" style="background-image: url('../Profile/react-gallery/src/resrc/brown/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/brown.jpg" alt="">
+                    <h3>Brown</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Melanin')" style="background-image: url('../Profile/react-gallery/src/resrc/melanin/3.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/melanin.jpg" alt="">
+                    <h3>Melanin</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Primrose')" style="background-image: url('../Profile/react-gallery/src/resrc/primrose/6.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/primrose.jpg" alt="">
+                    <h3>Primrose</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Blooming')" style="background-image: url('../Profile/react-gallery/src/resrc/blooming/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/blooming.jpg" alt="">
+                    <h3>Blooming</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Goldie')" style="background-image: url('../Profile/react-gallery/src/resrc/goldie/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/goldie.jpg" alt="">
+                    <h3>Goldie</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Serene')" style="background-image: url('../Profile/react-gallery/src/resrc/serene/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/serene.jpg" alt="">
+                    <h3>Serene</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Afrobeaut')" style="background-image: url('../Profile/react-gallery/src/resrc/afrobeaut/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/afrobeaut.jpg" alt="">
+                    <h3>Afrobeaut</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Dangerous')" style="background-image: url('../Profile/react-gallery/src/resrc/dangerous/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/dangerous.jpg" alt="">
+                    <h3>Dangerous</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Anti')" style="background-image: url('../Profile/react-gallery/src/resrc/anti/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/anti.jpg" alt="">
+                    <h3>Anti</h3>
+                </figure>
+                <figure id="photo-item" onclick="GalleryRunner.viewImages('Shoot3')" style="background-image: url('../Profile/react-gallery/src/resrc/shoot3/0.jpg');">
+                    <img src="../Profile/react-gallery/src/resrc/shoot 3.jpg" alt="">
+                    <h3>Shoot 3</h3>
+                </figure>
+            </section>
+        </section>
     </main>
     <footer>
         <p>Footer Content &copy; 2024</p>
