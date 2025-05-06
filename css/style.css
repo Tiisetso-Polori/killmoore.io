@@ -1,0 +1,333 @@
+:root{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    --prim-text:#45A;
+    --prim-text2:#8A1;
+    --prim-bg:#555;
+    
+}
+
+/* Used the following the flowing photo view*/
+
+/*#colcont{
+    width:100%;
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+
+#colcont::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+
+#colcont::-webkit-scrollbar-thumb{
+    background:#201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+#colcont::-webkit-scrollbar-track{
+    background:linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0, #17141d);
+}
+
+#cont{
+    border:1px solid grey;
+    background-color: grey;
+    object-fit: cover;
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    text-align: center;
+    padding:2.5rem;
+
+    border-radius: 16px;
+    background:#FFF;
+    box-shadow: -1rem 0 3rem #777;
+
+    transition:1s;
+}
+
+#cont:hover{
+    transform:translateY(-1rem);
+}
+
+#cont:hover~#cont{
+    transform:translateX(130px);
+}
+
+#cont:not(:first-child){
+    margin-left:-130px;
+}
+
+#cont-title{
+    position:relative;
+    display:grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    margin:3rem 0 0;
+
+}
+
+#logo{
+    display: block;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    overflow:hidden;
+    margin:16px 10px;
+}
+
+.half-circle{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:60px;
+    height:48px;
+    fill:none;
+    stroke:#ff8a00;
+    stroke-width:8;
+    stroke-linecap:round;
+    pointer-events: none;
+}
+
+#title{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#201c29;   
+}*/
+
+/* Used the following for a "flapping/extending menu or nav bar"*/
+
+/*
+
+body{
+    color:black;
+    background-color: white;
+    margin:0;
+    padding:0;
+
+}
+
+ reduces scroller width
+body::-webkit-scrollbar{
+    width:0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #17141d;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--prim-text);
+}
+
+main{
+    margin-left: 5rem;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.navbar{
+    width:5rem;
+    height:100vh;
+    position:fixed;
+    background-color: var(--prim-bg);
+    z-index: 100;
+    color: var(--prim-text2);
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar:hover{
+    width: 12rem;
+    transition: 1s;
+}
+
+.navbar:hover .link-text{
+    transition: 20s;
+    display: flex;
+    
+}
+
+.nav-item{
+    width:100%;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-link{
+    display: flex;
+    height:5rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}*/
+
+body{
+    width:100%;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    width: 100%;
+    height:100px;
+    background-color:#AAA;
+    text-align: justify;
+}
+
+#gallery{
+    top:100px;
+    height: 98vh;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+#gal-nav{
+    width:100vw;
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    list-style-type: none;
+    /*overflow-x: scroll;*/
+}
+
+#gal-nav div{
+    width:350px;
+    height:350px;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #777 solid 0.1rem;
+    box-shadow: -1rem 0 2rem #444;
+    padding: 2em;
+    margin:1.5rem;
+}
+
+#gal-nav div:hover{
+    transform:translateY(-1rem);
+    transition: 1s;
+}
+
+#gal-nav-item img{
+    width:100%;
+}
+
+#gal-nav a{
+    color:var(--text1);
+    text-decoration: none;
+    margin:0.7rem auto;
+}
+
+#gal-nav::-webkit-scrollbar{
+    width:30px;
+    height:15px;
+}
+
+#gal-nav::-webkit-scrollbar-thumb{
+    background:#17141d;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+#gal-nav::-webkit-scrollbar-track{
+    background:linear-gradient(90deg,#5e5d63,#5e5d63 1px,#5e5d63 0, #5e5d63);
+}
+
+#collection{
+    width: 100%;
+}
+
+#collection img{
+    width: 100%;
+}
+
+#pictures{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:1000;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    background-color:rgba(150,150,150,.9);
+    /* the normal box delays visibility transition so it doesn't hide until after the opacity transition is done*/
+}
+
+#pictures img{
+    width:100%;
+    margin: 5px;
+}
+
+@media screen and (max-width:490px) {
+    #gallery{
+        width:100%;
+        height: 20rem;
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+    #gal-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style-type: none;
+        overflow-x: hidden;
+        width:100%;
+    }
+    
+    #ejozi, #bhosso, #primrose, #brown, #melanin{
+        width:15rem;
+        height:15rem;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: #777 solid 0.1rem;
+        box-shadow: -1rem 0 2rem #444;
+        padding: 2em;
+        margin:1.5rem;
+    }
+    
+    #gal-nav-item:hover{
+        transform:translateY(-1rem);
+        transition: 1s;
+    }
+    
+    #gal-nav-item img{
+        width:100%;
+    }
+    
+    #gal-nav-item a{
+        color:var(--text1);
+        text-decoration: none;
+        margin:0.7rem auto;
+    }
+    
+
+}
