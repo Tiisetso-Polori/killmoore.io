@@ -72,42 +72,42 @@ const Photo = {
             header: 'Bhosso',
             //cover:bhosso,
             //dir: '../Profile/react-gallery/src/resrc/bhosso/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg', '23.jpg', '24.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
         },
         {
             id: 3,
             header: 'Brown',
             //cover:brown,
             //dir: '../Profile/react-gallery/src/resrc/brown/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '19.jpg', '11.jpg', '12.jpg', '13.jpg', '13.jpg', '14.jpg', '15.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '11.jpg', '12.jpg', '13.jpg', '13.jpg', '14.jpg', '15.jpg']
         },
         {
             id: 4,
             header: 'eJozi',
             //cover:ejozi,
             //dir: '../Profile/react-gallery/src/resrc/ejozi/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '13.jpg', '14.jpg', '15.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg','13.jpg', '14.jpg', '15.jpg']
         },
         {
             id: 5,
             header: 'Primrose',
             //cover:primrose,
             //dir: '../Profile/react-gallery/src/resrc/primrose/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '13.jpg', '14.jpg', '15.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
         },
         {
             id: 6,
             header: 'eGumbini',
             //cover:egumbini, 
             //dir: '../Profile/react-gallery/src/resrc/egumbini/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '13.jpg', '14.jpg', '15.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
         },
         {
             id: 7,
             header: 'Melanin',
             //cover:melanin,
             //dir: '../Profile/react-gallery/src/resrc/melanin/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '13.jpg', '14.jpg', '15.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
         },
         {
             id: 8,
@@ -121,7 +121,7 @@ const Photo = {
             header: 'Goldie',
             //cover:goldie,
             //dir: '../Profile/react-gallery/src/resrc/goldie/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '20.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
         },
         {
             id: 11,
@@ -144,7 +144,7 @@ const Photo = {
             header: 'Dangerous',
             //cover:dangerous,
             //dir: '../Profile/react-gallery/src/resrc/dangerous/',
-            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg']
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
         }
         ,
         {
@@ -153,6 +153,11 @@ const Photo = {
             //cover:shoot3,
             //dir: '../Profile/react-gallery/src/resrc/shoot 3/',
             photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg']
+        },
+        {
+            id: 15,
+            header: 'Muse',
+            photos: ['0.jpg', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
         }
     ],
 
